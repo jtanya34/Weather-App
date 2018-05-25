@@ -31,7 +31,6 @@ geocode.geocodeAddress(address,(errorMessage,results)=>{
 			} else{
 				//res.send(`it's currently ${weatherResults.temperature}. it feels like ${weatherResults.apparentTemperature}`);
 	res.render('result',{
-		city:results.address,
 		temp:weatherResults.temperature,
 		apparenttemp:weatherResults.apparentTemperature,
 		windspeed:weatherResults.windSpeed,
